@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { Button, styled, Typography } from "@mui/material";
+import SettingsIcon from "@mui/icons-material/Settings";
 
 function App() {
+
+  const BlueButton = styled(Button)({
+    backgroundColor: "skyblue",
+    color: "#888",
+    margin:5,
+    "&:hover":{
+      backgroundColor:"lightblue",
+    },
+    "&:disabled":{
+      backgroundColor:"gray",
+      color: 'white',
+    }
+  })
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button variant="text">Text</Button>
+      <Button startIcon={<SettingsIcon />} variant="contained" color="secondary">Contained</Button>
+      <Button variant="outlined">Outlined</Button>
+      <Typography variant="h1">
+        it uses h1 style but its p
+      </Typography>
+      <BlueButton>testeee</BlueButton>
     </div>
   );
 }

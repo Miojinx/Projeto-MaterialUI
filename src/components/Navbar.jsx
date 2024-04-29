@@ -8,7 +8,8 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
-  justifyContent: "space-between"
+  justifyContent: "space-between",
+  backgroundColor:"#795695"
 })
 
 const Search = styled("div")(({ theme }) => ({
@@ -42,7 +43,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false)
 
   return (
-    <AppBar position='sticky'>
+    <AppBar position='sticky' >
 
       <StyledToolbar>
         <Typography variant='h6' sx={{

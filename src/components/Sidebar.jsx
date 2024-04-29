@@ -4,12 +4,13 @@ import { AccountBox, Article, Group, Home, Person, Settings, Storefront, ModeNig
 
 const Sidebar = () => {
   return (
-    <Box bgcolor="" flex={1} p={2}
+    <Box  bgcolor="" flex={1} p={2}
       sx={{
         display: {
           xs: "none", sm: "block"
         }
       }}>
+        <Box position="fixed">
          <List>
 
           <ListItem disablePadding>
@@ -85,6 +86,7 @@ const Sidebar = () => {
           </ListItem>
 
           </List>
+        </Box>
       </Box>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Switch } from '@mui/material'
 import { AccountBox, Article, Group, Home, Person, Settings, Storefront, ModeNight } from '@mui/icons-material'
 
-const Sidebar = () => {
+const Sidebar = ({mode, setMode}) => {
   return (
     <Box  bgcolor="" flex={1} p={2}
       sx={{
@@ -81,7 +81,7 @@ const Sidebar = () => {
               <ListItemIcon>
                 <ModeNight/>
               </ListItemIcon>
-              <Switch/>
+              <Switch onChange={e=>setMode(mode=== "light" ? "dark" : "light")}/>
             </ListItemButton>
           </ListItem>
 

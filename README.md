@@ -1,5 +1,5 @@
 # README
 
-Site criado simulando uma rede social, a fim de exercitar o uso do Material UI
+Site que simula uma rede social feito com o objetivo de exercitar o uso do Material UI.
 
 ![Untitled](README/Untitled.png)

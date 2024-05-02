@@ -53,7 +53,7 @@ const Navbar = () => {
           display: { xs: "block", sm: "none" }
         }} />
 
-        <Search><InputBase placeholder='search...' /></Search>
+        <Search><InputBase placeholder='pesquisa...' /></Search>
 
         <Icons>
           <Badge badgeContent={4} color="error">
@@ -85,9 +85,9 @@ const Navbar = () => {
           horizontal: 'right',
         }}
       >
-        <MenuItem>Profile</MenuItem>
-        <MenuItem>My account</MenuItem>
-        <MenuItem>Logout</MenuItem>
+        <MenuItem>Perfil</MenuItem>
+        <MenuItem>Minha conta</MenuItem>
+        <MenuItem>Sair</MenuItem>
       </Menu>
 
     </AppBar>
